@@ -1,6 +1,71 @@
+:root {
+    --gray: #f1f1f1;
+    --black: #000000;
+    --green: #9dc73b;
+    --white: #ffffff;
+    --dark: #333333;
+}
+
 * {
     margin:0;
     padding: 0;
 }
 
-.
+body {
+    background: var(--gray);
+    font-family: 'Heebo', sans-serif;
+}
+
+.header {
+    background-color: var(--green);
+    height: auto;
+}
+
+.header-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-item:hover {
+    background-color: var(--dark);
+}
+
+.menu-a {
+    display: flex;
+    margin: 20px;
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.hero-section {
+    margin: auto;
+}
+
+.hero-container {
+    width: 100%;
+}
+
+.hero-title {
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.hero-title h1 {
+    color: var(--dark)
+}
+
+.hero-img {
+    background-image: url(img/OG-banner.png);
+    background-position: center center;
+    height: 774px;
+}
+
