@@ -77,3 +77,14 @@ body {
     width: 100%;
 }
 
+.featured-items-section {
+    padding: 40px;
+}   
+
+.featured-items-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
