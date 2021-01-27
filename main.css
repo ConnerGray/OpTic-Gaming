@@ -147,6 +147,32 @@ body {
     justify-content: space-evenly;
 }
 
+/*Roster Oage*/
+.roster-hero-section {
+    padding: 0px 30px 0px 30px;
+    height: auto;
+    background-image: url('img/background.png');
+    background-repeat: none;
+    background-position: center top;
+}
+
+.roster-hero-container {
+    margin: auto;
+    padding: 20px 0 20px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.roster-hero-item {
+    color: var(--gray);
+    text-align: center;
+}
+
+.roster-hero-item h2 {
+    margin-bottom: 10px;
+}
+
 /* Media Queries */
 @media screen and (min-width: 700px) {
     .featured-items-container {
@@ -156,4 +182,10 @@ body {
     .featured-button {
         width: 400%;
     }
+
+    .roster-hero-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 80vh;
+        align-items: center;
 }
+
