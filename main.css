@@ -238,10 +238,20 @@ body {
 
     .roster-hero-section {
         padding: 0 50px 30px 50px;
+        height: 70vh;
+        display: flex;
     }
 
     .roster-hero-container {
         height: auto;
         align-items: center;
     }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .roster-hero-container {
+        width: 50%;
+    }
+
 }
