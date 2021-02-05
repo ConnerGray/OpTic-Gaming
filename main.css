@@ -200,8 +200,10 @@ body {
     font-size: 2rem;    
 }
 
-.roster-hero-item h2, .roster-hero-item h3 {
+.name, .role {
     margin: 10px 0px 10px 0px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
 }
 
 .roster-hero-item p {
@@ -226,8 +228,31 @@ body {
     to {opacity: 1}
   }
 
-/* Media Queries */
-@media screen and (min-width: 700px) {
+
+/* Shop Section */
+.shop-section {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+}
+
+.shop-container {
+    display: grid;
+}
+
+.shop-item {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Media Queries */ /* Tablet */
+@media screen and (min-width: 767px) {
     .featured-items-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -238,7 +263,7 @@ body {
 
     .roster-hero-section {
         padding: 0 50px 30px 50px;
-        height: 70vh;
+        height: 100vh;
         display: flex;
     }
 
@@ -246,12 +271,21 @@ body {
         height: auto;
         align-items: center;
     }
+
+    .shop-container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
+/* Desktop */
 @media screen and (min-width: 1000px) {
 
     .roster-hero-container {
         width: 50%;
+    }
+
+    .shop-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
 }
